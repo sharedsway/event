@@ -1,0 +1,25 @@
+{
+    "name": "sharedsway/event",
+    "description": "事件管理器",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tony Java Z",
+            "email": "284141050@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Sharedsway\\Event\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=7.2",
+        "sharedsway/common": "dev-master"
+    },
+    "require-dev": {
+        "codeception/codeception": "3.0.x-dev"
+    }
+}
