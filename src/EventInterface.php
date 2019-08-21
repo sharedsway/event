@@ -5,12 +5,22 @@
  * Date: 19-8-18
  * Time: 上午12:58
  */
+
+/*
+ +------------------------------------------------------------------------+
+ | Code from Phalcon Framework                                            |
+ +------------------------------------------------------------------------+
+ | Phalcon Team (https://phalconphp.com)                                  |
+ +------------------------------------------------------------------------+
+ | Source of Phalcon (https://github.com/phalcon/cphalcon)                |
+ +------------------------------------------------------------------------+
+ */
 namespace Sharedsway\Event;
 
 /**
- * Phalcon\Events\EventInterface
+ * Sharedsway\Event\EventInterface
  *
- * Interface for Phalcon\Events\Event class
+ * Interface for Sharedsway\Event\Event class
  */
 interface EventInterface
 {

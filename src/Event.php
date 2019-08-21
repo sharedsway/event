@@ -6,6 +6,16 @@
  * Time: 上午12:58
  */
 
+/*
+ +------------------------------------------------------------------------+
+ | Code from Phalcon Framework                                            |
+ +------------------------------------------------------------------------+
+ | Phalcon Team (https://phalconphp.com)                                  |
+ +------------------------------------------------------------------------+
+ | Source of Phalcon (https://github.com/phalcon/cphalcon)                |
+ +------------------------------------------------------------------------+
+ */
+
 namespace Sharedsway\Event;
 
 class Event implements EventInterface
@@ -46,7 +56,7 @@ class Event implements EventInterface
     protected $_cancelable = true;
 
     /**
-     * Phalcon\Events\Event constructor
+     * Sharedsway\Event\Event constructor
      *
      * @param string type
      * @param \object source
