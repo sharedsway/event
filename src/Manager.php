@@ -419,7 +419,7 @@ class Manager implements ManagerInterface
         $fireEvents = $events[$eventType] ?? null;
         if ($fireEvents ) {
 
-            if ($fireEvents == "object" || $fireEvents == "array") {
+            if (is_object($fireEvents) || is_array($fireEvents)) {
 
                 // Create the event if it wasn't created before
                 if ($event === null) {

@@ -175,6 +175,23 @@ class ManagerCest
         $I->assertEquals(1, $number);
     }
 
+    public function attachAndFire(UnitTester $I)
+    {
+        $number        = 0;
+        $eventsManager = new Manager();
+
+        $propagationListener = function (Event $event) use (&$number) {
+            $number++;
+        };
+
+        $eventsManager->attach('hello:world', $propagationListener);
+        $eventsManager->fire('hello:world',$this);
+        $eventsManager->fire('hello:php',$this);
+        $I->assertEquals(1, $number);
+        $eventsManager->fire('hello:world',$this);
+        $I->assertEquals(2, $number);
+    }
+
     /**
      * @param \Sharedsway\Test\Event\UnitTester $I
      * @param Example $example
